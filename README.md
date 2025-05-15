@@ -1,64 +1,71 @@
-# Welcome to your  project
+# Pawsh Pet Spa Website
 
-## Project info
+A modern, creative, and inspirational website for Pawsh Pet Spa—where luxury meets care for your beloved pets.
 
-**URL**: https:///projects/083a5ae6-54e0-4419-aaf7-b4b0686887b3
+## ✨ Features
+- Multi-page design: Home, About Us, Pet Gallery, FAQ, Contact
+- Beautiful booking flow with animated steps
+- Responsive and mobile-friendly
+- Modern UI with Tailwind CSS & shadcn-ui components
+- Creative layouts and gradients for each page
+- Easy navigation between sections and pages
+- Built with Vite + React + TypeScript
 
-## How can I edit this code?
+## 🚀 Quick Start
 
-There are several ways of editing your application.
+1. **Clone the repo:**
+   ```sh
+   git clone <YOUR_GIT_URL>
+   cd pawsh-pet-grooming-website
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Run locally:**
+   ```sh
+   npm run dev
+   ```
+4. **Open** [http://localhost:5173](http://localhost:5173) in your browser.
 
-**Use **
+## 🖼️ Customization
+- Replace images in `/public/images/` for your own pets, team, or salon.
+- Edit text and branding in each page component in `/src/pages/`.
+- Tweak colors and gradients in `tailwind.config.js` or page files.
 
-Simply visit the [ Project](https:///projects/083a5ae6-54e0-4419-aaf7-b4b0686887b3) and start prompting.
+## 🌐 Deployment
+- Easily deploy to Vercel, Netlify, or your favorite static host.
+- Build for production:
+  ```sh
+  npm run build
+  ```
+- Preview production build:
+  ```sh
+  npm run preview
+  ```
 
-Changes made via  will be committed automatically to this repo.
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
-**Use your preferred IDE**
+## 📦 Tech Stack
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [lucide-react](https://lucide.dev/) (icons)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in .
+## 📄 License
+MIT
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🙏 Credits
+- UI icons by [lucide.dev](https://lucide.dev/)
+- UI library [shadcn/ui](https://ui.shadcn.com/)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+> Made with ❤️ for pet lovers by the Pawsh team.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
 ## How can I deploy this project?
 
