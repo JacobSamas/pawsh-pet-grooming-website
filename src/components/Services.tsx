@@ -48,7 +48,8 @@ const Services = () => {
   });
   
   // Create smooth horizontal scrolling effect based on vertical scroll
-  const xTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  // Adjust the scroll range so bubbles are always visible
+const xTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
   const smoothX = useSpring(xTransform, { stiffness: 100, damping: 30, restDelta: 0.001 });
   
   // State for currently hovered bubble
@@ -94,10 +95,7 @@ const Services = () => {
       </div>
 
       {/* Horizontal bubble services */}
-      <motion.div 
-        className="relative h-[500px] flex items-center"
-        style={{ x: smoothX, position: 'relative' }}
-      >
+      <div className="relative h-[500px] flex items-center justify-center">
         {/* Background bubbles */}
         <div className="absolute inset-0 -z-10">
           {Array.from({length: 15}).map((_, i) => (
@@ -123,7 +121,7 @@ const Services = () => {
           ))}
         </div>
       
-        <div className="flex space-x-24 pl-[50vw] pr-[50vw]">
+        <div className="flex space-x-24 justify-center">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -192,7 +190,7 @@ const Services = () => {
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </div>
       
       <div className="container-pawsh mt-16 text-center">
         <motion.div 

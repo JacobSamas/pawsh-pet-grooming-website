@@ -22,19 +22,19 @@ const BookingFlow = () => {
     {
       title: "Choose Your Service",
       subtitle: "Select from our premium grooming options",
-      icon: <Calendar className="h-10 w-10 text-pawsh-gold" />,
+      icon: <Calendar className="h-10 w-10 text-blue-500" />,
       component: <ServiceSelector />
     },
     {
       title: "Pick a Date",
       subtitle: "Select the perfect day for your pet's spa day",
-      icon: <Calendar className="h-10 w-10 text-pawsh-gold" />,
+      icon: <Calendar className="h-10 w-10 text-blue-500" />,
       component: <DatePicker />
     },
     {
       title: "Select Drop-off Time",
       subtitle: "Choose a convenient time for you and your pet",
-      icon: <Clock className="h-10 w-10 text-pawsh-gold" />,
+      icon: <Clock className="h-10 w-10 text-blue-500" />,
       component: <TimePicker />
     }
   ];
@@ -64,13 +64,14 @@ const BookingFlow = () => {
       });
     }, { threshold: 0.2 });
     
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
+    const currentRef = containerRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
     
     return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -106,7 +107,7 @@ const BookingFlow = () => {
       className="py-20 bg-pawsh-pink/10"
       ref={containerRef}
     >
-      <div className="container-pawsh opacity-0">
+      <div className="container-pawsh">
         <h2 className="section-title">
           Book Your Pet's Spa Day
         </h2>
